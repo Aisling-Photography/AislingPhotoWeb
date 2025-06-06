@@ -2,8 +2,8 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
     <link rel="icon" href="https://aislingphoto.com/Images/camicon.svg"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="https://aislingphoto.com/"/>
     <title>Hill Country Collection</title>
@@ -19,18 +19,20 @@
         }
     </style>
     <style>
-        grid {
-            display: block;
-            grid-template: auto;
+        gallery {
+            display: flexbox;
+            grid-template: repeat(auto-fill, minmax(200px, 1fr));
+            justify-content: center;
             grid-gap: 4px;
-            padding: 2px;
+            padding-top: 10px;
+            padding: 2px
         }
     </style>
 </head>
 
     <body>
         <h1>Hill Country Collection</h1>
-        <grid>
+        <gallery>
             <img src="https://aislingphoto.com/cdn-cgi/image/quality=50/https://aislingphoto.com/Images/HC_001.JPG" alt="HC_001" style="width:20%; height:auto;">
             <img src="https://aislingphoto.com/cdn-cgi/image/quality=50/https://aislingphoto.com/Images/HC_002.JPG" alt="HC_002" style="width:20%; height:auto;">
             <img src="https://aislingphoto.com/cdn-cgi/image/quality=50/https://aislingphoto.com/Images/HC_003.JPG" alt="HC_003" style="width:20%; height:auto;">
@@ -71,6 +73,6 @@
             <img src="https://aislingphoto.com/cdn-cgi/image/quality=50/https://aislingphoto.com/Images/HC_038.JPG" alt="HC_038" style="width:20%; height:auto;">
             <img src="https://aislingphoto.com/cdn-cgi/image/quality=50/https://aislingphoto.com/Images/HC_039.JPG" alt="HC_039" style="width:20%; height:auto;">
             <img src="https://aislingphoto.com/cdn-cgi/image/quality=50/https://aislingphoto.com/Images/HC_040.JPG" alt="HC_040" style="width:20%; height:auto;">
-        </grid>
+        </gallery>
     </body>
 </html>
